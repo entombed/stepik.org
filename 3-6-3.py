@@ -1,12 +1,11 @@
 import requests
-listTmp = []
-apiUrl = ''
+dataNumbers = []
 with open('dataset_24476_3.txt', 'r') as file:
     for line in file:
-        listTmp.append(line.strip())
+        dataNumbers.append(line.strip())
 
-print(listTmp)
-for tmpInt in listTmp:
+print(dataNumbers)
+for tmpInt in dataNumbers:
     url = 'http://numbersapi.com/' + tmpInt + '/math?json=true'
     print(url)
     req = requests.get(url)
