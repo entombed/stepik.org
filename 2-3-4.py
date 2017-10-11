@@ -1,3 +1,8 @@
+'''
+https://stepik.org/lesson/24464/step/4?unit=6769
+
+'''
+
 class multifilter:
     def judge_half(pos, neg):
         # допускает элемент, если его допускает хотя бы половина фукнций (pos >= neg)

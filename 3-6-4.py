@@ -1,4 +1,5 @@
 '''
+https://stepik.org/lesson/24476/step/4?unit=6781
 Name stepik
 Client Id 7a84c7ef15081a79a0d6
 Client Secret 3b44243f2f32942735dad45a507cf5c6
@@ -13,11 +14,6 @@ with open('dataset_24476_4.txt', 'r') as file:
     for line in file:
         list_id.append(line.strip())
 
-'''
-list_id = [ '4d8b92b34eb68a1b2c0003f4',
-            '537def3c139b21353f0006a6',
-            '4e2ed576477cc70001006f99']
-'''
 r = requests.post("https://api.artsy.net/api/tokens/xapp_token",
                   data={
                       "client_id": client_id,
