@@ -1,0 +1,13 @@
+<!-- <cube color="blue">
+  <cube color="red">
+    <cube color="green"></cube>
+    <cube color="red">
+      <cube color="red"></cube>
+      <cube color="blue"></cube>
+      <cube color="blue"></cube>
+    </cube>
+  </cube>
+  <cube color="red"></cube>
+</cube>
+ -->
+<cube color="blue"><cube color="red"><cube color="green"></cube></cube><cube color="red"></cube></cube>

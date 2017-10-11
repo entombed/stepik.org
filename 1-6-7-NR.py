@@ -1,16 +1,13 @@
-def find_path(graph, start, end, path=[]):
-    path = path + [start]
-    if start == end:
-        return path
-    if not start in graph:
-        return None
-    for node in graph[start]:
-        if node not in path:
-            newpath = find_path(graph, node, end, path)
-            if newpath:
-                return newpath
-    return None
+def check(cls, par):
+    global found
+    if cls in myDict[par]:
+        found = 1
+        return found
+    else:
+        for i in myDict[par]:
+            check(i, par)
 
+'''
 myInt = int(input())
 myDict = {}
 for item in range(myInt):
@@ -21,12 +18,20 @@ for item in range(myInt):
         z = ''.join(x[1])
         zz = z.split()
         myDict.update({x[0]:zz})
-
-myInt = int(input())
-for item in range(myInt):
-    myStr = input().strip()
-    x = find_path(myDict, myStr[2], myStr[0])
-    if x == None:
-        print('No')
-    else:
-        print('Yes')
+print(myDict)
+'''
+myDict = {'A': ['A'], 'B': ['A'], 'C': ['A'], 'D': ['B', 'C']}
+found = 0
+print (check('A','D'))
+'''
+4
+A
+B : A
+C : A
+D : B C
+4
+A B
+B D
+C D
+D A
+'''

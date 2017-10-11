@@ -4,6 +4,14 @@ jsomList = [
     {"name": "C", "parents": ["A"]}
     ]
 
+jsomList = [
+{'name': 'E', 'parents': []},
+{'name': 'A', 'parents': ['E']},
+{'name': 'B', 'parents': []},
+{'name': 'C', 'parents': ['A', 'B']},
+{'name': 'D', 'parents': ['C', 'B']},
+]
+
 listRex = {}
 for item in jsomList:
     keyTmp = item['name']
